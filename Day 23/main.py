@@ -14,14 +14,17 @@ player = Player()
 car_manager = CarManager()
 scoreboard = Scoreboard()
 
-#Set key arrow up for player
+#Set key arrow up, right, down for player
 screen.listen()
 screen.onkey(player.go_up, "Up")
+screen.onkey(player.go_right, "Right")
+screen.onkey(player.go_left, "Left")
+
 
 #while loop to make the game keep going on and on
 game_is_on = True
 while game_is_on:
-    time.sleep(0.1)
+    time.sleep(0.05) #game speed
     screen.update()
 
     car_manager.create_car()
