@@ -9,7 +9,7 @@ class Player(Turtle):
     def __init__(self):
         super().__init__()
         self.shape("turtle")
-        self.penup() 
+        self.penup() #Hide drawing line
         self.go_to_start()
         self.setheading(90) #Heading 90 degree set
 
