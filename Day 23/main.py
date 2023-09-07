@@ -25,7 +25,7 @@ screen.onkey(player.go_left, "Left")
 game_is_on = True
 while game_is_on:
     time.sleep(0.05) #game speed
-    screen.update()
+    screen.update() #update
 
     car_manager.create_car()
     car_manager.move_cars()
